@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
+}
+
+
+header {
+    grid-area: header;
+    background-color:RGB(39 90 123);
+    text-align: center;
+    color: aliceblue;
+}
+
+menu {
+    grid-area: menu;
+    background-color: RGB(239 241 236);
+}
+
+main {
+    grid-area: main;
+    background-color: RGB(239 241 236);
+}
+
+footer {
+    grid-area: footer;
+    background-color:RGB(39 90 123);
+    text-align: center;
+    color: aliceblue;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "menu  main main main main" 
+    "footer footer footer footer footer";
+}
+
+.menu_lateral{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.grilla_productos{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill,minmax(15rem ,1fr)); 
+    padding: 1rem;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    
+}
+
+
+
